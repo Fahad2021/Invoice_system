@@ -5,7 +5,7 @@ class Bill_App:
     def __init__(self,root):
         self.root=root
         self.root.geometry("1350x700+0+0")
-        self.root.title("Invoice System Software")
+        self.root.title("Invoice System")
         bg_color="#ED1A23"
         fg="black"
         title=Label(self.root,text="Brotherhood Super Shop",bd=12,relief=GROOVE,bg=bg_color,fg="white",font=("times new roman",30,"bold"),pady=2).pack(fill=X)
