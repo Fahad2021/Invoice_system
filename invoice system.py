@@ -81,6 +81,27 @@ class Bill_App:
         Body__lbl=Label(F2,text="Body Loshan",font=('times new roman',16,"bold"),bg=bg_color,fg=fg).grid(row=5,column=0,padx=10,pady=10,sticky='w')
         Body__txt =Entry(F2, width=10,textvariable=self.loshan,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=5, column=1, pady=10, padx=10)
 
+        #...........Grocery frame
+        F3 = LabelFrame(self.root, bd=10, relief=GROOVE, text="Glocery", font=("times new roman", 15, "bold"),fg="white", bg=bg_color)
+        F3.place(x=340, y=180,width=325,height=380)
+        g1_lbl=Label(F3,text="Rice",font=('times new roman',16,"bold"),bg=bg_color,fg=fg).grid(row=0,column=0,padx=10,pady=10,sticky='w')
+        g1_txt =Entry(F3, width=10,textvariable=self.rice,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=0, column=1, pady=10, padx=10)
+
+        g2_lbl=Label(F3,text="Food Oil",font=('times new roman',16,"bold"),bg=bg_color,fg=fg).grid(row=1,column=0,padx=10,pady=10,sticky='w')
+        g2_cream__txt =Entry(F3, width=10,textvariable=self.food_oil,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=1, column=1, pady=10, padx=10)
+
+        g3_lbl=Label(F3,text="Daal",font=('times new roman',16,"bold"),bg=bg_color,fg=fg).grid(row=2,column=0,padx=10,pady=10,sticky='w')
+        g3__txt =Entry(F3, width=10,textvariable=self.dall,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=2, column=1, pady=10, padx=10)
+
+        g4_lbl=Label(F3,text="Wheat",font=('times new roman',16,"bold"),bg=bg_color,fg=fg).grid(row=3,column=0,padx=10,pady=10,sticky='w')
+        g4__txt =Entry(F3, width=10,textvariable=self.wheat,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=3, column=1, pady=10, padx=10)
+
+        g5_lbl=Label(F3,text="Sugar",font=('times new roman',16,"bold"),bg=bg_color,fg=fg).grid(row=4,column=0,padx=10,pady=10,sticky='w')
+        g5__txt =Entry(F3, width=10,textvariable=self.sugar,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=4, column=1, pady=10, padx=10)
+
+        g6__lbl=Label(F3,text="Tea",font=('times new roman',16,"bold"),bg=bg_color,fg=fg).grid(row=5,column=0,padx=10,pady=10,sticky='w')
+        g6__txt =Entry(F3, width=10,textvariable=self.tea,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=5, column=1, pady=10, padx=10)
+
 root=Tk()
 ob=Bill_App(root)
 root.mainloop()
