@@ -55,10 +55,31 @@ class Bill_App:
         cpn_txt = Entry(F1, width=15, font="arial 15", textvariable=self.c_phone, bd=7, relief=SUNKEN).grid(row=0,column=3,pady=5,padx=10)
 
         c_bill_lbl = Label(F1, text="Bill Number", bg=bg_color, fg=fg, font=("times new roman", 18, "bold")).grid(row=0,column=4,padx=20,pady=5)
-        c_bill_txt = Entry(F1, width=15, font="arial 15", textvariable=self, bd=7, relief=SUNKEN).grid(row=0, column=5, pady=5, padx=10)
+        c_bill_txt = Entry(F1, width=15, font="arial 15",  bd=7, relief=SUNKEN).grid(row=0, column=5, pady=5, padx=10)
 
-        bill_btn = Button(F1, text="Search", command=self, width=10, bd=7, font='arial 12 bold').grid(row=0,column=6,padx=10,pady=10)
+        bill_btn = Button(F1, text="Search",width=10, bd=7, font='arial 12 bold').grid(row=0,column=6,padx=10,pady=10)
 
+
+        #...........cosmatics frame
+        F2 = LabelFrame(self.root, bd=10, relief=GROOVE, text="Cosmetics", font=("times new roman", 15, "bold"),fg="white", bg=bg_color)
+        F2.place(x=5, y=180,width=325,height=380)
+        bath_lbl=Label(F2,text="Bath Soap",font=('times new roman',16,"bold"),bg=bg_color,fg=fg).grid(row=0,column=0,padx=10,pady=10,sticky='w')
+        bath_txt =Entry(F2, width=10,textvariable=self.soap,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=0, column=1, pady=10, padx=10)
+
+        face_cream_lbl=Label(F2,text="Face Cream",font=('times new roman',16,"bold"),bg=bg_color,fg=fg).grid(row=1,column=0,padx=10,pady=10,sticky='w')
+        face_cream__txt =Entry(F2, width=10,textvariable=self.face_cream,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=1, column=1, pady=10, padx=10)
+
+        face_w_lbl=Label(F2,text="Face Wash",font=('times new roman',16,"bold"),bg=bg_color,fg=fg).grid(row=2,column=0,padx=10,pady=10,sticky='w')
+        face_w__txt =Entry(F2, width=10,textvariable=self.face_wash,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=2, column=1, pady=10, padx=10)
+
+        Hair_s_lbl=Label(F2,text="Hair Spray",font=('times new roman',16,"bold"),bg=bg_color,fg=fg).grid(row=3,column=0,padx=10,pady=10,sticky='w')
+        Hair_s__txt =Entry(F2, width=10,textvariable=self.spary,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=3, column=1, pady=10, padx=10)
+
+        Hair_g_lbl=Label(F2,text="Hair Gell",font=('times new roman',16,"bold"),bg=bg_color,fg=fg).grid(row=4,column=0,padx=10,pady=10,sticky='w')
+        Hair_g__txt =Entry(F2, width=10,textvariable=self.gell,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=4, column=1, pady=10, padx=10)
+
+        Body__lbl=Label(F2,text="Body Loshan",font=('times new roman',16,"bold"),bg=bg_color,fg=fg).grid(row=5,column=0,padx=10,pady=10,sticky='w')
+        Body__txt =Entry(F2, width=10,textvariable=self.loshan,font=("times new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=5, column=1, pady=10, padx=10)
 
 root=Tk()
 ob=Bill_App(root)
